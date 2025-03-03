@@ -62,8 +62,8 @@ The repository is organized as follows:
 ```
 MIF_for_ADHD/
 ├── configs/
-│   ├── MIFSM/
-│   ├── MIFSM_pp/
+│   ├── 4DVitADHD/
+│   ├── 4DVitADHD_pp/
 ├── data/
 │   ├── FMRI_data/
 │   │   ├── ADHD/
@@ -74,10 +74,10 @@ MIF_for_ADHD/
 │   ├── tabular/
 ├── models/
 │   ├── utils/
-│   │   ├── 4d_MIFSM.py 
+│   │   ├── 4D_VitADHD.py 
 │   │   ├── init.py
 │   │   ├── build.py
-│   ├── MIFSM.py
+│   ├── VitADHD.py
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -92,7 +92,7 @@ git clone https://github.com/InfoLab-SKKU/4DfCF.git
 
 # install project   
 cd MISFM
-conda env create -f configs/MIFSM/base_patch4_group7_224.yaml
+conda env create -f configs/4DVitADHD/base_patch4_group7_224.yaml
 conda activate py39
 ```
 
