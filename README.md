@@ -85,10 +85,10 @@ MIF_for_ADHD/
 
 ## Installation
 
-To install the required dependencies, run:
+To install the required dependencies, ru
 ```bash
 # clone project   
-git clone https://github.com/InfoLab-SKKU/4DfCF.git
+git clone https://github.com/InfoLab-SKKU/4DViTADHD.git
 
 # install project   
 cd MISFM
