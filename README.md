@@ -91,7 +91,7 @@ To install the required dependencies, ru
 git clone https://github.com/InfoLab-SKKU/4DViTADHD.git
 
 # install project   
-cd MISFM
+cd 4DVitADHD
 conda env create -f configs/4DVitADHD/base_patch4_group7_224.yaml
 conda activate py39
 ```
