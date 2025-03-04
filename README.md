@@ -21,22 +21,34 @@ The proposed framework integrates high-dimensional 4D fMRI data with structured 
 Below are some key figures from the study that illustrate the framework and its components:
 
 - **Multimodal Architecture Overview**  
+  This study presents a multimodal architecture that integrates 4D fMRI imaging data and structured tabular data to improve the accuracy of ADHD diagnosis.
+  The architecture consists of two main branches: one to process high-dimensional 4D fMRI data, which captures the
+  spatio-temporal dynamics of brain activity, and the other to
+  process structured tabular data, which includes clinical and
+  demographic information, such as age, gender, behavioral
+  scores, and IQ metrics. 
+  Once feature extraction is complete, the model uses
+  two fusion strategies to integrate the information from both
+  branches. 
+  Finally, XAI techniques are employed to enhance the interpretability of the diagnostic framework.
   ![Multimodal Architecture](./readme_img/img.png)
 
-- **Intermediate Fusion Strategy**  
+- **Results on Different Multimodal Settings**  
+  When comparing MLP and XGBoost for processing tabular data within the multimodal setting, MLP consistently demonstrated better integration with deep learning-based fMRI feature extractors.
   ![Intermediate Fusion](./readme_img/img_1.png)
 
-- **Decision Fusion Strategy**  
-  ![Decision Fusion](./readme_img/img_2.png)
+- **Performance Metrics Comparisons**
 
-- **XAI Assistant Module**  
-  ![XAI Assistant Module](./readme_img/img_3.png)
+  Performance Metrics Comparisons of Test Results in Different Multimodels on ADHD-200 Datasets (Fusion with MLP). IFM1D, stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with 1D-CNN; DFMF, stands for Decision Fusion of the 4D fMRI data processing model + MLP with FCNN; IFMF, stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with FCNN.
+  
+  ![Performance Metrics Comparisons](./readme_img/img_7.png)  
 
-- **4D fMRI Data Preprocessing Pipeline**  
-  ![4D fMRI Processing](./readme_img/img_4.png)
+- **XAI Assistant Module**
 
-- **Tabular Data Processing Module**  
-  ![Tabular Data Processing](./readme_img/img_5.png)
+  In this study, we utilized IG-SQ and SHAP methods within the Captum framework to analyze key features across multimodal data, enhancing the interpretability of our ADHD diagnosis model. Figures and illustrate the feature analysis for ADHD and Normal samples across different modalities (fMRI and tabular data), highlighting the practical diagnostic significance of our model.
+  ![XAI Assistant Module](./readme_img/img_5.png)
+  ![XAI Assistant Module](./readme_img/img_9.png)
+
 
 ## Installation
 
