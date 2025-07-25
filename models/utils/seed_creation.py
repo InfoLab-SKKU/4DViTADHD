@@ -7,7 +7,7 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from parser import str2bool
 import pandas as pd
 
-
+#
 split_file_path = './data/splits/S1200/seed_candidate.txt'
 dataset_name = 'S1200'
 img_path = '/mnt/ssd/processed/S1200'
