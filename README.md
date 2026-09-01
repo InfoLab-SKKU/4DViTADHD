@@ -6,7 +6,7 @@ This repository contains the implementation and experimental code for the resear
 
 **Multimodal Intermediate Fusion for ADHD Diagnosis using 4D Vision Transformer**
 
-The proposed framework integrates high-dimensional 4D fMRI data with structured clinical and demographic (tabular) data to improve the diagnostic accuracy of ADHD. It leverages advanced deep learning architectures, including a 4D Vision Transformer (SwiFT) for fMRI processing and a Multilayer Perceptron (MLP) for tabular data, combined via intermediate fusion strategies. Additionally, explainable AI techniques are applied to enhance model interpretability.
+The proposed framework integrates high-dimensional 4D fMRI data with structured clinical and demographic (tabular) data to improve ADHD diagnostic accuracy. It leverages advanced deep learning architectures, including a 4D Vision Transformer (SwiFT) for fMRI processing and a Multilayer Perceptron (MLP) for tabular data, combined via intermediate fusion strategies. Additionally, the model uses explainable AI techniques to improve interpretability.
 
 ## Overview
 
@@ -22,7 +22,7 @@ The proposed framework integrates high-dimensional 4D fMRI data with structured 
 Below are some key figures from the study that illustrate the framework and its components:
 
 - **Multimodal Architecture Overview**  
-  This study presents a multimodal architecture that integrates 4D fMRI imaging data and structured tabular data to improve the accuracy of ADHD diagnosis.
+  This study presents a multimodal architecture that integrates 4D fMRI data and structured tabular data to improve ADHD diagnosis accuracy.
   The architecture consists of two main branches: one to process high-dimensional 4D fMRI data, which captures the
   spatio-temporal dynamics of brain activity, and the other to
   process structured tabular data, which includes clinical and
@@ -40,13 +40,13 @@ Below are some key figures from the study that illustrate the framework and its 
 
 - **Performance Metrics Comparisons**
 
-  Performance Metrics Comparisons of Test Results in Different Multimodels on ADHD-200 Datasets (Fusion with MLP). IFM1D, stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with 1D-CNN; DFMF, stands for Decision Fusion of the 4D fMRI data processing model + MLP with FCNN; IFMF, stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with FCNN.
+  Performance Metrics Comparisons of Test Results in Different Multimodels on ADHD-200 Datasets (Fusion with MLP). IFM1D stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with 1D-CNN; DFMF stands for Decision Fusion of the 4D fMRI data processing model + MLP with FCNN; IFMF stands for Intermediate Fusion of the 4D fMRI data processing model + MLP with FCNN.
   
   ![Performance Metrics Comparisons](./readme_img/img_7.png)  
 
 - **XAI Assistant Module**
 
-  In this study, we utilized IG-SQ and SHAP methods within the Captum framework to analyze key features across multimodal data, enhancing the interpretability of our ADHD diagnosis model. Figures and illustrate the feature analysis for ADHD and Normal samples across different modalities (fMRI and tabular data), highlighting the practical diagnostic significance of our model.
+  In this study, we utilized IG-SQ and SHAP methods within the Captum framework to analyze key features across multimodal data, enhancing the interpretability of our ADHD diagnosis model. Figures illustrate the feature analysis for ADHD and Normal samples across different modalities (fMRI and tabular data), highlighting the practical diagnostic significance of our model.
   ![XAI Assistant Module](./readme_img/img_5.png)
   ![XAI Assistant Module](./readme_img/img_9.png)
 
